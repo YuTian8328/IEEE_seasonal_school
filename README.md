@@ -25,3 +25,16 @@ docker run -e GRANT_SUDO=yes --user root -p 8888:8888 -v $(pwd):/home/jovyan fl_
 you will find the link with `token` in Terminal.
 
 In your browser open `localhost:8888/lab?token=<YOUR_TOKEN>`
+
+`Ctrl+C` to exit.
+
+Everytime you rerun `docker run`, a new container is created.
+You could remove all exited containers:
+```
+docker rm $(docker ps -a -f status=exited -q)
+```
+
+When you finish this project, if you want to remove all images:
+```
+docker rmi $(docker images -a -q)
+```
