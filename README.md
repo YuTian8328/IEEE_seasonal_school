@@ -1,10 +1,15 @@
 Install `docker`
 
-`git clone ...`
+```
+git clone https://github.com/YuTian8328/IEEE_seasonal_school
+```
 
-`cd <Project_Directory>`
+```
+cd IEEE_seasonal_school
+```
 
-Once you get new `.ipynb` file(s) into the folder, run `sudo chmod 777 *.ipynb`.
+Put all your `.ipynb` file(s) into the folder.
+Once new files have been added, run `sudo chmod 777 *.ipynb`.
 
 ```
 docker build -t fl_ex .
@@ -15,4 +20,4 @@ docker run -e GRANT_SUDO=yes --user root -p 8888:8888 -v $(pwd):/home/jovyan fl_
 ```
 you will find the link with `token` in Terminal.
 
-In your browser open `localhost:8888/lab?token=XXXXXXXXXXXXXXXXX`
+In your browser open `localhost:8888/lab?token=<YOUR_TOKEN>`
