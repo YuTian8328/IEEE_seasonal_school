@@ -28,6 +28,8 @@ Copy the link and open it in your browser: `http://127.0.0.1:8888/lab?token=<YOU
 
 `Ctrl+C` to exit.
 
+NOTE: Please DO NOT open two jupyter servers in your browser at the same time.
+
 Everytime you rerun `docker run`, a new container is created.
 You could remove all exited containers:
 ```
